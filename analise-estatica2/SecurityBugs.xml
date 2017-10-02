@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.2-dev-20160306-90c514b" sequence="1" timestamp="1506973407218" analysisTimestamp="1506973405978" release="">
+  <Project projectName="RedesSockets">
+    <Jar>/Users/alexandre/Documents/workspace/ufg/RedesSockets/bin</Jar>
+    <AuxClasspathEntry>/Users/alexandre/Documents/workspace/ufg/RedesSockets/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/alexandre/Documents/workspace/ufg/RedesSockets/ClienteServidor/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="3" rank="20" abbrev="UC" category="STYLE" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+    <Method classname="br.ufg.inf.webserver.WebServer" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer" start="22" end="22" startBytecode="0" endBytecode="53" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer$HttpRequest">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+    <Method classname="br.ufg.inf.webserver.WebServer$HttpRequest" name="processRequest" signature="()V" isStatic="false">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="62" startBytecode="0" endBytecode="30" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="inputStream" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="51" startBytecode="7" endBytecode="7" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="51" startBytecode="7" endBytecode="7" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="inputStream"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer$HttpRequest">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+    <Method classname="br.ufg.inf.webserver.WebServer$HttpRequest" name="processRequest" signature="()V" isStatic="false">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="62" startBytecode="0" endBytecode="30" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="outputStream" register="2" pc="19" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="52" end="52" startBytecode="18" endBytecode="18" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="52" end="52" startBytecode="18" endBytecode="18" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="outputStream"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer$HttpRequest">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+    <Method classname="br.ufg.inf.webserver.WebServer$HttpRequest" name="processRequest" signature="()V" isStatic="false">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="62" startBytecode="0" endBytecode="231" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="bufferedReader" register="3" pc="52" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="59" end="59" startBytecode="53" endBytecode="53" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java" role="SOURCE_LINE_DEREF"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer$HttpRequest">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+    <Method classname="br.ufg.inf.webserver.WebServer$HttpRequest" name="processRequest" signature="()V" isStatic="false">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="51" end="62" startBytecode="0" endBytecode="30" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="requestedLine" register="4" pc="30" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="56" end="56" startBytecode="33" endBytecode="33" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="56" end="56" startBytecode="33" endBytecode="33" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="br.ufg.inf.webserver.WebServer$HttpRequest">
+      <SourceLine classname="br.ufg.inf.webserver.WebServer$HttpRequest" start="36" end="62" sourcefile="WebServer.java" sourcepath="br/ufg/inf/webserver/WebServer.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 27 Sep 2017 20:16:47 -0300" total_classes="2" referenced_classes="22" total_bugs="6" total_size="29" num_packages="1" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="77.80" clock_seconds="573.77" peak_mbytes="1019.33" alloc_mbytes="1024.00" gc_seconds="0.07" priority_3="2" priority_2="3" priority_1="1">
+    <PackageStats package="br.ufg.inf.webserver" total_bugs="6" total_types="2" total_size="29" priority_3="2" priority_2="3" priority_1="1">
+      <ClassStats class="br.ufg.inf.webserver.WebServer" sourceFile="WebServer.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="br.ufg.inf.webserver.WebServer$HttpRequest" sourceFile="WebServer.java" interface="false" size="24" bugs="5" priority_3="1" priority_2="3" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="322" invocations="365" avgMicrosecondsPerInvocation="882" maxMicrosecondsPerInvocation="14700" standardDeviationMircosecondsPerInvocation="1679"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="288" invocations="2" avgMicrosecondsPerInvocation="144335" maxMicrosecondsPerInvocation="183709" standardDeviationMircosecondsPerInvocation="39372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="65" invocations="22" avgMicrosecondsPerInvocation="2998" maxMicrosecondsPerInvocation="23563" standardDeviationMircosecondsPerInvocation="5273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="54" invocations="22" avgMicrosecondsPerInvocation="2484" maxMicrosecondsPerInvocation="15669" standardDeviationMircosecondsPerInvocation="3911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="52" invocations="365" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="8159" standardDeviationMircosecondsPerInvocation="470"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="334" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="4836" standardDeviationMircosecondsPerInvocation="350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="38" invocations="76" avgMicrosecondsPerInvocation="500" maxMicrosecondsPerInvocation="3018" standardDeviationMircosecondsPerInvocation="509"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="37" invocations="6" avgMicrosecondsPerInvocation="6254" maxMicrosecondsPerInvocation="18094" standardDeviationMircosecondsPerInvocation="6421"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="21" invocations="5" avgMicrosecondsPerInvocation="4279" maxMicrosecondsPerInvocation="17394" standardDeviationMircosecondsPerInvocation="6629"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1506973407217" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
