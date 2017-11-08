@@ -14,9 +14,9 @@
 | 8  | 1  | https://github.com/mxalexandre/ls2017/wiki/tecnologiasThoughtworks  |   |
 | 9  | 1  | https://github.com/mxalexandre/ls2017/wiki/Analise-Estatica https://github.com/mxalexandre/ls2017/tree/master/analise-estatica https://github.com/mxalexandre/ls2017/tree/master/analise-estatica2  |   |
 | 10  |  1 | https://github.com/mxalexandre/ls2017/tree/master/javancss https://github.com/mxalexandre/exercicio-dw  |   |
-| 11  | 1  | https://github.com/mxalexandre/ls2017/wiki/arquitetura  |  x |
-| 12  | 1  | https://github.com/mxalexandre/ls2017/wiki/visualvm  |  xx |
+| 11  | 1  | https://github.com/mxalexandre/ls2017/wiki/arquitetura  |   |
+| 12  | 1  | https://github.com/mxalexandre/ls2017/wiki/visualvm  |   |
 | 13  | 1  | https://github.com/mxalexandre/ls2017/wiki/sonarcloud  |   |
-| 14  | 1  | https://github.com/mxalexandre/ls2017/wiki/softvis3d  |  xx |
-| 15  |   |   |   |
+| 14  | 1  | https://github.com/mxalexandre/ls2017/wiki/softvis3d  |   |
+| 15  | 1  | https://github.com/mxalexandre/ls2017/blob/master/README.md  |   |
 | 16  |   |   |   |
